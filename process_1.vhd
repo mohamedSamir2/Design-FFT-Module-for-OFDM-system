@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.STD_LOGIC_ARITH.all;
 
 entity Butterfly is
- generic(bus_width : integer := 26);
+ generic(bus_width : integer := 24);
 port(
  a_real , b_real , c_real    : in  std_logic_vector (bus_width-1 downto 0) ;
  a_imaj , b_imaj , c_imaj    : in  std_logic_vector (bus_width-1 downto 0) ;
@@ -68,9 +68,9 @@ begin
 
 --------------------output due to subtraction
      SUB2 : SUB   --raal part of output 2  =  c_r -  u_r
-    port map(c_real ,  real_result , output1_real );
+    port map(c_real ,  real_result , output2_real );
      SUB3 : SUB   --imaj part of output 2  =  c_r -  u_r  
-    port map(c_imaj ,  imaj_result , output1_imaj );
+    port map(c_imaj ,  imaj_result , output2_imaj );
 
 
 end architecture;

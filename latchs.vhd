@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 entity Latchs_4by2 is
- generic(bus_width : integer := 20);
+ generic(bus_width : integer := 24);
 port(
 CLK , RST   				: in  std_logic ;
 D_real , D_imaj 		     	: in  std_logic_vector (bus_width-1 downto 0) ;

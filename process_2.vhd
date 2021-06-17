@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.STD_LOGIC_ARITH.all;
 
 entity Process_1 is
- generic(bus_width : integer := 20);
+ generic(bus_width : integer := 24);
 port(
    CLK , RST   							: in  std_logic ;
    EN1 , EN2 , EN3 , EN4   					: in  std_logic ;
