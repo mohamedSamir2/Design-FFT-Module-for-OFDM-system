@@ -39,8 +39,8 @@ architecture STRUCT of Process_1 is
  
   component Butterfly
     port(
-	a_real , b_real , c_real    : in  std_logic_vector (bus_width-1 downto 0) ;
- 	a_imaj , b_imaj , c_imaj    : in  std_logic_vector (bus_width-1 downto 0) ;
+	c_real , b_real , a_real    : in  std_logic_vector (bus_width-1 downto 0) ;
+ 	c_imaj , b_imaj , a_imaj    : in  std_logic_vector (bus_width-1 downto 0) ;
  	output1_real , output1_imaj : out std_logic_vector (bus_width-1 downto 0) ;
  	output2_real , output2_imaj : out std_logic_vector (bus_width-1 downto 0) 
 	);

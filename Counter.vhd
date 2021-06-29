@@ -13,8 +13,9 @@ architecture count_arch of counter is
     begin
       process(clk_10M,clk_50M)
         begin
-          if (clk_10M = '1') then count <= "00";
-          elsif (clk_50M'event and clk_50M = '1') then count <= count + 1;
+          if (clk_10M'event and clk_10M = '1') then count <= "00";
+          elsif (clk_50M'event and clk_50M = '1' and count/="11") then count <= count + 1;
+		  else count <= count ;
           end if;
          end process;
          Sel_MUX <= count;
