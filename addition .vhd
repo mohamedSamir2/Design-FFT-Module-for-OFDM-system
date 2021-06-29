@@ -6,7 +6,7 @@ use ieee.STD_LOGIC_ARITH.all;
 
 
 entity ADD is
- generic(bus_width : integer := 24 ; floating_bits : integer := 6 );
+ generic(bus_width : integer := 24 ; floating_bits : integer := 10 );
  port(
      input_1  	  : in  std_logic_vector (bus_width-1 downto 0) ;
      input_2      : in  std_logic_vector (bus_width-1 downto 0) ;
