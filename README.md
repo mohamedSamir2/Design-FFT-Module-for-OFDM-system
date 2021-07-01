@@ -19,3 +19,6 @@ algorithm by using 16 butterflies per stage and 5 such
 stages are required to implement a sequence of 32 points.
 Hence we must use 80 butterfly operations to design a 32
 point FFT.
+
+
+synthesis was done by VIVADO 2018.2 
